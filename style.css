@@ -2,6 +2,12 @@
     src: url("./font/Nunito-SemiBold.ttf");
     font-family: nunito;
 }
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     margin:0;
     padding:0;
@@ -26,7 +32,7 @@ body{
 }
 
 .vidbg{
-    position: absolute;
+    position:fixed;
     z-index: -1;
     top: 50%;
     left: 50%;
@@ -60,4 +66,36 @@ body{
         left: 50%;
         transform: translate(-50%, 0%);
     }
+}
+@-webkit-keyframes bounce{
+    0% {
+transform: scale(1,1) translate(0px, 0px);
+}
+
+30%{
+transform: scale(1,1) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1) translate(0px, -10px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
+.bounce{
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    -webkit-animation: bounce 0.75s infinite;
+}
+#Projects{
+    font-family: nunito;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
