@@ -30,6 +30,9 @@ body{
     min-height: 100vh;
 
 }
+.List{
+    list-style-type: none;
+}
 .backimg{
     display: none;
     z-index: -1;
@@ -54,6 +57,10 @@ body{
     height: 100%;
     width: 100%;
 }
+#points{
+    font-family: nunito;
+    font-size: 1.7rem;
+}    
 .icons{
     height: 64px;
     width: 64px
@@ -102,6 +109,9 @@ body{
         height: 47px;
         width: 47px;
     }
+    .container{
+        grid-template-columns: 1fr;
+    }
 }
 @media (min-aspect-ratio:16/9){
     .backimg{
@@ -137,8 +147,5 @@ transform: scale(1,1) translate(0px, 0px);
     justify-content: center;
     bottom: 20px;
     animation: bounce 0.75s infinite;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 567ff9e9a6b5ba639ae3ed119651334f18f35f04
+
