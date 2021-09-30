@@ -5,9 +5,6 @@
 html{
     scroll-behavior: smooth;
 }
-ul{
-    padding-inline-start: 0px;   
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -63,6 +60,7 @@ body{
 #points{
     font-family: nunito;
     font-size: 1.7rem;
+    padding: 0;
 }    
 .icons{
     height: 64px;
