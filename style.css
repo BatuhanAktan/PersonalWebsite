@@ -8,6 +8,9 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
+ul{
+    padding-inline-start: 0px;
+}
 body{
     margin:0;
     padding:0;
@@ -60,7 +63,6 @@ body{
 #points{
     font-family: nunito;
     font-size: 1.7rem;
-    padding: 0;
 }    
 .icons{
     height: 64px;
