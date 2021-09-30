@@ -5,6 +5,9 @@
 html{
     scroll-behavior: smooth;
 }
+ul{
+    padding-inline-start: 0px;   
+}
 ::-webkit-scrollbar {
     display: none;
 }
