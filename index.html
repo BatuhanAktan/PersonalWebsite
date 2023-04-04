@@ -1,49 +1,86 @@
-<!DOCTYPE html>
-<html>
+<html> 
 <head>
-    <title>Batuhan Aktan</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta htttp-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
+	<title>Batuhan Aktan</title>
+	<link rel="stylesheet" href="index2.css">
+	<meta htttp-equiv="X-UA-Compatible" content="ie=edge" />
 </head>
 <body>
-    <div class="back">
-        <section>
-            <h1 class="intro">I am Batuhan, a 
+	<div id="first">
+		<div class="add">
+			<a href="#" onclick="addMore();"><img src="./images/plus.png" alt="Add More"></a>
+		</div>
+		<div class="firstPage">
+			<div class="menu">
+				<h1 class="text">I am Batuhan, a 
                 <span class="typedText"></span>
-                <br />
-                <a  href="https://github.com/BatuhanAktan"  target="_blank"><img class="icons" src="./images/GithubLogo.png" alt="Github Icon"></a>
-                <a href="https://ca.linkedin.com/in/batuhan-aktan-9385ba198?trk=people-guest_people_search-card" target="_blank"><img class="iconsIN" src="./images/LinkedInlogo.png" alt="LinkedIn Icon"></a>
-                <a href="./Resume.pdf" target="_blank" download><img class="iconsIN" src="./images/article-line.png" alt="Resume"></a>
                 <br>
-                <div class="bounce">
+                <a  href="https://github.com/BatuhanAktan"  target="_blank"><img class="icons" src="./images/GithubLogo.png" alt="Github Icon"></a>
+                <a href="https://ca.linkedin.com/in/batuhan-aktan-9385ba198?trk=people-guest_people_search-card" target="_blank"><img class="icons" height=67px width=67px src="./images/LinkedInlogo.png" alt="LinkedIn Icon"></a>
+                <a href="./Resume.pdf" target="_blank" download><img class="icons" src="./images/article-line.png" alt="Resume"></a>
+                <br>
+                <div class="pulse">
                     <a href="#Projects"><img src="./images/DownArrow.png" alt="Down Arrow"></a>
                 </div>
-                
+                <script src="./main.js"></script>
             </h1>
+			</div>
+		</div>
+		<div class="projects" id="Projects">
+			<div class="back">
+				<a href="#first"><img height=50 width=50 src="./images/up.png"></a>
+			</div>
+			<h1 class="intro">Projects</h1>
+			<div class="grid-container">
+			<div class="grid-item1">
+				<h1 class="projectTitle">TSpeach</h1>
+				<img height=150vw to width=300vw src="./images/tspeach.png" alt="project picture">
+				<div class="paragraph">
+				<p> Communication is everything! For non-native or physically impared english speakers, it can be difficulty and even 
+				embarrasing not being able to pronounce certain words. Using Assembly AI we aim to solve this! </p>
+				</div>
+				<a  href="https://github.com/BatuhanAktan/TSpeach"  target="_blank"><img class="icons" src="./images/githubdark.png" alt="Github Icon"></a>
+			</div>
+			<div class="grid-item2">
+				<h1 class="projectTitle">PrioList</h1>
+				<img height=150vw width=300vw src="./images/priolist.png" alt="project picture">
+				<div class="paragraph">
+				<p height=20vh> PrioList is a chrome web extension that allows users to create a Wishlist with the press of a button. PrioList has an algorithm that allows this Wishlist to be organized in the order of importance, where necessities like food, shelter, health come in first place, wants are put behind </p>
+				</div>
+				<a  href="https://github.com/BatuhanAktan/PrioList"  target="_blank"><img class="icons" src="./images/githubdark.png" alt="Github Icon"></a>
+			</div>
+			<div class="grid-item3">
+				<h1 class="projectTitle">Respiratory Illness Detection</h1>
+				<img height=150vw  width=300vw src="./images/ml.png" alt="project picture">
+				<div class="paragraph">
+				<p> In the current state of healthcare many hospitals are working over their capacity, and our group wanted to help fix this issue, we used machine learning to diagnose a healthy lung X-ray from a sick one. </p>
+				</div>
+				<a  href="https://github.com/BatuhanAktan/RespiratoryIllnessDetectionUsingML"  target="_blank"><img class="icons" src="./images/githubdark.png" alt="Github Icon"></a>
+			</div>
 
-            <script src="./main.js"></script>
-        
-
-            <video class="vidbg" autoplay muted loop>
-                <source src="./videos/Network - 27018.mp4" type="video/mp4">
-            </video>
-
-            <img class="backimg" src="./images/BackIMG.png" alt="backimg">
-        </section>  
-    </div>
-    <div id="Projects">
-            <h1>Projects</h1>
-            <br>
-            <li class="List">
-                <ul id="points">Tb Detection in X-rays Using ML</ul>
-                <a href="https://github.com/BatuhanAktan/RespiratoryIllnessDetectionUsingML"  target="_blank"><img src="./images/GithubLogo.png" height="45" width="45" alt="Github Icon"></a>
-            </li>
-            <li class="List">
-                <ul id="points">PrioList</ul>
-                <a href="https://github.com/BatuhanAktan/QhacksPrioList"  target="_blank"><img src="./images/GithubLogo.png" height="45" width="45" alt="Github Icon"></a>
-            </li>
-    </div>
+		</div>
+		</div>
+		<div class="circles">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
 </body>
 </html>
