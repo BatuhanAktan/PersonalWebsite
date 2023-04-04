@@ -100,6 +100,15 @@ body{
 .grid-item3:hover{
     background: rgba(255, 255, 255, 0.9);
 }
+@media (max-width: 1200px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    body{
+        background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 800% 800%;
+    }
+}
 .grid-item1{
     background: rgba(255, 255, 255, 0.5);
     grid-column: 1;
