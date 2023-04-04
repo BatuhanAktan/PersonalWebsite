@@ -12,6 +12,8 @@ html{
     display: none;
 }
 
+
+/* Global Settings */
 body{
     font-family: nunito;
     font-size: 1.25rem;
@@ -20,6 +22,8 @@ body{
 	background-size: 100% 100%;
 }
 
+
+/* First Page */
 .firstPage{
     height: 95vh;
     text-align: center;
@@ -45,6 +49,8 @@ body{
     text-align: right;
 }
 
+
+/* Pulsing Animation */
 .pulse {
   animation: pulse 0.8s infinite ease-in-out alternate;
 }
@@ -54,12 +60,76 @@ body{
   to { transform: scale(1.1); }
 }
 
+/* Project Page */
 .projects{
     height: 90vh;
     text-align: center;
     z-index: 1;
 }
 
+
+/* Project Cards */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    place-items: center;
+    grid-row-gap: 50px;
+}
+.grid-item1:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+.grid-item2:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+.grid-item3:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.grid-item1{
+    background: rgba(255, 255, 255, 0.5);
+    grid-column: 1;
+    color: rgba(142, 142, 142, 1);
+    border-radius: 25px;
+    height: 40vh;
+    width: 600px;
+    justify-content: center;
+}
+.grid-item2{
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(142, 142, 142, 1);
+    border-radius: 25px;
+    height: 40vh;
+    width: 600px;
+}
+.grid-item3{
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(142, 142, 142, 1);
+    border-radius: 25px;
+    height: 40vh;
+    width: 600px;
+}
+
+.projectTitle{
+    font-size:1.5rem;
+}
+.paragraph{
+    height: 15vh;
+    padding: 10px;
+}
+
+/* Mobile Handling */
+@media (max-width: 1300px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    body{
+        background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 800% 800%;
+    }
+}
+
+/* Background Animation */
 .circles{
     position: absolute;
     top: 0;
@@ -84,61 +154,7 @@ body{
         transform: translateY(200vh) rotate(720deg);
     }
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: auto;
-    place-items: center;
-    grid-row-gap: 50px;
-}
-.grid-item1:hover{
-    background: rgba(255, 255, 255, 0.9);
-}
-.grid-item2:hover{
-    background: rgba(255, 255, 255, 0.9);
-}
-.grid-item3:hover{
-    background: rgba(255, 255, 255, 0.9);
-}
-@media (max-width: 1200px){
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-    body{
-        background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 800% 800%;
-    }
-}
-.grid-item1{
-    background: rgba(255, 255, 255, 0.5);
-    grid-column: 1;
-    color: rgba(142, 142, 142, 1);
-    border-radius: 25px;
-    height: 40vh;
-    width: 600px;
-    justify-content: center;
-}
-.grid-item2{
-    background: rgba(255, 255, 255, 0.5);
-    color: rgba(142, 142, 142, 1);
-    border-radius: 25px;
-    height: 40vh;
-    width: 600px;
-}
-.grid-item3{
-    background: rgba(255, 255, 255, 0.5);
-    color: rgba(142, 142, 142, 1);
-    border-radius: 25px;
-    height: 40vh;
-    width: 600px;
-}
-.projectTitle{
-    font-size:1.5rem;
-}
-.paragraph{
-    height: 15vh;
-    padding: 10px;
-}
+
 .circles div {
     position: absolute;
     display: block;
