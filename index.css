@@ -26,7 +26,7 @@ body{
 
 /* First Page */
 .firstPage{
-    height: 95vh;
+    height: 100vh;
     text-align: center;
     z-index: 1;
 }
@@ -332,4 +332,31 @@ body{
     height: 190px;
     animation-delay: 15s;
 
+}
+
+.followers{
+    position: absolute;
+}
+
+@keyframes icicle {
+    0% {
+        opacity: 0;
+    }
+    1%{
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        border-radius:50%;
+        transform: translateY(200vh);
+    }
+}
+
+.triangle{
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #57CEF1;
 }

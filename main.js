@@ -5,7 +5,7 @@ const speed = 50;
 const newTextDelay = 1500;
 let skillsIndex = 0;
 let charIndex = 0;
-
+let total = 0;
 
 function type(){
     if(charIndex < skills[skillsIndex].length){
@@ -30,4 +30,18 @@ function erase(){
     }
 }
 
+function add(){
+    var triangle = document.createElement('div');
+    triangle.className = 'triangle';
+    triangle.style.left =  Math.random() * (window.innerWidth - 30)+ 'px';
+    triangle.style.top = -20 + 'px';
+    triangle.style.borderLeft= "25px solid transparent";
+    triangle.style.borderRight= "25px solid transparent";
+    triangle.style.borderTop= "60px solid rgba(255, 255, 255, 0.2)";
+    const current = document.getElementById("circles");
+    document.body.insertBefore(triangle, current);
+
+    triangle.style.animation = "icicle 15s linear infinite";
+
+}
 type();
