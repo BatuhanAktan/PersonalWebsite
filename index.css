@@ -6,6 +6,7 @@
 html{
     height: 200vh;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -19,7 +20,7 @@ body{
     font-size: 1.25rem;
     color: white;
 	background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 100% 100%;
+	background-size: 150% 150%;
 }
 
 
@@ -75,6 +76,7 @@ body{
     margin: auto;
     place-items: center;
     grid-row-gap: 50px;
+    position: relative;
 }
 .grid-item1:hover{
     background: rgba(255, 255, 255, 0.9);
@@ -91,7 +93,6 @@ body{
     grid-column: 1;
     color: rgba(142, 142, 142, 1);
     border-radius: 25px;
-    height: 40vh;
     width: 600px;
     justify-content: center;
 }
@@ -99,14 +100,12 @@ body{
     background: rgba(255, 255, 255, 0.5);
     color: rgba(142, 142, 142, 1);
     border-radius: 25px;
-    height: 40vh;
     width: 600px;
 }
 .grid-item3{
     background: rgba(255, 255, 255, 0.5);
     color: rgba(142, 142, 142, 1);
     border-radius: 25px;
-    height: 40vh;
     width: 600px;
 }
 
@@ -114,7 +113,6 @@ body{
     font-size:1.5rem;
 }
 .paragraph{
-    height: 15vh;
     padding: 10px;
 }
 
@@ -126,6 +124,16 @@ body{
     body{
         background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 800% 800%;
+    }
+
+    .grid-item1{
+    width: 90%;
+    }
+    .grid-item2{
+    width: 90%;
+    }
+    .grid-item3{
+    width: 90%;
     }
 }
 
