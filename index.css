@@ -46,6 +46,9 @@ body{
 .icons:hover {
     transform: scale(1.1);
 }
+.view:hover{
+    transform: scale(1.1);
+}
 .add{
     text-align: right;
 }
@@ -87,24 +90,33 @@ body{
 .grid-item3:hover{
     background: rgba(255, 255, 255, 0.9);
 }
+.grid-item4:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
 
 .grid-item1{
     background: rgba(255, 255, 255, 0.5);
     grid-column: 1;
-    color: rgba(142, 142, 142, 1);
+    color: rgb(85, 85, 85);
     border-radius: 25px;
     width: 600px;
     justify-content: center;
 }
 .grid-item2{
     background: rgba(255, 255, 255, 0.5);
-    color: rgba(142, 142, 142, 1);
+    color: rgb(85, 85, 85);
     border-radius: 25px;
     width: 600px;
 }
 .grid-item3{
     background: rgba(255, 255, 255, 0.5);
-    color: rgba(142, 142, 142, 1);
+    color: rgb(85, 85, 85);
+    border-radius: 25px;
+    width: 600px;
+}
+.grid-item4{
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(85, 85, 85);
     border-radius: 25px;
     width: 600px;
 }
