@@ -1,6 +1,6 @@
 const typedTextSpan = document.querySelector(".typedText");
 
-const skills = ['programmer', 'skier', 'teacher', 'brother', 'student'];
+const skills = ['programmer', 'entrepreneur', 'leader', 'skier', 'teacher', 'brother', 'student'];
 const speed = 50;
 const newTextDelay = 1500;
 let skillsIndex = 0;
