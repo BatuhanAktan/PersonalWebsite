@@ -1,0 +1,27 @@
+body{
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.contents{
+   width: 40vw; 
+   margin:auto;
+   font-size: 1.3rem;
+}
+
+
+.back a{
+    color:black;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1300px){
+    .contents{
+        width: 100vw; 
+        font-size: 1rem;
+     }
+     .back a{
+        font-size: 1.2rem;
+    }
+
+}

@@ -20,7 +20,7 @@ body{
     font-size: 1.25rem;
     color: white;
 	background: linear-gradient(-180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 150% 150%;
+	background-size: 200% 200%;
 }
 
 
@@ -31,7 +31,15 @@ body{
     z-index: 1;
 }
 .back{
-    float: right;
+    float:right;
+    top: 10px;
+    right: 10px;
+}
+.front{
+    float:right;
+    rotate: 180deg;
+    bottom: 0;
+    right: 0;
 }
 .menu{
     padding-top: 30vh;
@@ -50,10 +58,24 @@ body{
     transform: scale(1.1);
 }
 .add{
-    text-align: right;
+    display:flex;
+    justify-content: space-between;
+    font-family: nunito;
+    font-size: 1.25rem;
+    color: white;
 }
 
-
+.header-menu a {
+    font-family: nunito;
+    font-size: 1.75rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 0.5vw;
+}
+.header-menu a:hover {
+    color: rgb(85, 85, 85);
+    transform: scale(1.1); 
+}
 /* Pulsing Animation */
 .pulse {
   animation: pulse 0.8s infinite ease-in-out alternate;
@@ -66,7 +88,7 @@ body{
 
 /* Project Page */
 .projects{
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     z-index: 1;
 }
@@ -80,6 +102,7 @@ body{
     place-items: center;
     grid-row-gap: 50px;
     position: relative;
+    min-height: 85vh;
 }
 .grid-item1:hover{
     background: rgba(255, 255, 255, 0.9);
@@ -122,10 +145,33 @@ body{
 }
 
 .projectTitle{
-    font-size:1.5rem;
+    font-size:1.25rem;
 }
 .paragraph{
     padding: 10px;
+}
+
+/* Papers Page */
+.papers{
+    text-align: center;
+    min-height: 100vh;
+}
+.link-container{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.paper-item{
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding-left: 2vw;
+    text-align: left;
+    font-size: 1.25rem;
+    color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2vw;
 }
 
 /* Mobile Handling */
@@ -149,6 +195,31 @@ body{
     }
     .grid-item4{
     width: 90%;
+    }
+    .link-container{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .paper-item{
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 25px;
+        padding-left: 2vw;
+        text-align: left;
+        font-size: 0.75rem;
+        color: rgb(85, 85, 85);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2vw;
+    }
+    .back{
+        display:none;
+    }
+    .front{
+        display:none;
+    }
+    .header-menu a {
+        padding-left: 1vw;
     }
 }
 
@@ -174,7 +245,7 @@ body{
     100%{
         opacity: 0;
         border-radius:50%;
-        transform: translateY(200vh) rotate(720deg);
+        transform: translateY(300vh) rotate(720deg);
     }
 }
 
@@ -186,7 +257,7 @@ body{
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     bottom: 100vh;
-    animation: animate 15s linear infinite;
+    animation: animate 23s linear infinite;
 }
 
 .circles div:nth-child(1){
